@@ -59,11 +59,12 @@ body {
 /* main layout */
 a {
 	color:#fff;
-	text-decoration:underline;
+	text-decoration:none;
 	outline:none
 }
 a:hover {
-	text-decoration:none
+	text-decoration:none;
+	shape:rect;
 }
 h1 {
 	float:left;
@@ -89,6 +90,20 @@ h3 {
 	padding:34px 0 8px 0;
 	letter-spacing:-1px
 }
+h4 {
+	font-size:25px;
+	color:#fff;
+	font-weight:normal;
+	line-height:1.2em;
+	padding:34px 0 8px 0;
+	letter-spacing:-1px;
+	text-align: center;
+}
+h5 {
+	float: left;
+	font-size: 20px;
+	text-align: center;
+}
 p {
 	padding-bottom:22px
 }
@@ -105,25 +120,42 @@ header {
 }
 #menu {
 	float:right;
-	padding:71px 16px 0 0
+	padding:71px 16px 0 0;
 }
-#menu li {
-	float:left;
-	padding-left:1px
+#menu, #menu ul {
+	list-style: none;
+}
+#menu > li {
+	float: center;
 }
 #menu li a {
 	display:block;
-	font-size:19px;
-	color:#130c04;
+	font-size:15px;
+	color:#ffffff;
 	text-decoration:none;
 	line-height:42px;
 	height:43px;
-	padding:0 19px;
+	padding:0 30px;
 	border-radius:8px;
 	-moz-border-radius:8px;
 	-webkit-border-radius:8px;
 	position:relative;
 	background:url(../images/spacer.gif) repeat
+}
+#menu ul {
+	position: absolute;
+	display: none;
+	z-index:999;
+}
+#menu ul li a {
+	width: 90px;
+}
+#menu li:hover ul {
+	display:block;
+}
+#menu li {
+	float:left;
+	padding-left:1px;
 }
 #menu li a:hover, #menu .active a {
 	background:url(../images/menu_bg.gif) bottom repeat-x #92d30f;
@@ -131,6 +163,28 @@ header {
 }
 #menu li a:hover, #menu .active a {
 	background/*\**/:url(../images/menu_bg.gif) top repeat-x #337f05\9
+}
+/* Main menu
+------------------------------------------*/
+#menu > li > a {
+    color: #000;
+}
+#menu > li:hover > a {
+    background: #000;
+    color: #130c04;
+}
+ 
+/* Submenu
+------------------------------------------*/
+#menu ul {
+    background: #ffffff;
+    width:350px;
+    height:100px;
+}
+#menu ul li a {
+    color: #000;
+}
+#menu ul li:hover a {
 }
 .slider_bg {
 	width:100%;
@@ -194,6 +248,23 @@ header {
 }
 .pad_top1 {
 	padding-top:5px
+}
+.bot_right {
+	vertical-align:bottom;
+	text-align:right;
+	margin-right: 20px;
+}
+.bot_center {
+	vertical-align:text-top;
+	text-align:center;
+	padding-top:0px;
+	margin-top:0px;
+}
+.bot_left_col {
+	vertical-align:bottom;
+	text-align:right;
+	margin-right: 230px;
+	margin-bottom: -25px;
 }
 .dropcap1 {
 	float:left;
@@ -351,7 +422,8 @@ footer a {
 footer a:hover {
 }
 #icons li {
-	line-height:1.9em
+	line-height:1.9em;
+	display:inline;
 }
 #icons a {
 	color:#a09d99;

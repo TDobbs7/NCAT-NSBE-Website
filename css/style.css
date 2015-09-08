@@ -161,6 +161,7 @@ header {
 	background:url(../images/menu_bg.gif) bottom repeat-x #92d30f;
 	color:#fff
 }
+
 #menu li a:hover, #menu .active a {
 	background/*\**/:url(../images/menu_bg.gif) top repeat-x #337f05\9
 }
@@ -170,8 +171,8 @@ header {
     color: #000;
 }
 #menu > li:hover > a {
-    background: #000;
-    color: #130c04;
+    background: #458B00;
+    color: #ffffff;
 }
  
 /* Submenu
@@ -182,9 +183,10 @@ header {
     height:100px;
 }
 #menu ul li a {
-    color: #000;
+    color: #000000;
 }
 #menu ul li:hover a {
+	color: #ffffff;
 }
 .slider_bg {
 	width:100%;

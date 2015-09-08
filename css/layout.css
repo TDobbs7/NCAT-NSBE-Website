@@ -17,7 +17,11 @@
 	width:300px
 }
 .col5 {
-	width:1000px
+	width:1000px;
+}
+.col6 {
+	width:1000px;
+	height:55px;
 }
 /* index.html */
 #page1 .body1 {
@@ -91,3 +95,6 @@
 #page5 .marg_right1 {
 	margin-right:30px
 }
+
+
+

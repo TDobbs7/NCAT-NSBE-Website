@@ -171,8 +171,12 @@ header {
     color: #000;
 }
 #menu > li:hover > a {
+<<<<<<< HEAD
     background: #458B00;
     color: #ffffff;
+=======
+    color: #130c04;
+>>>>>>> 3e4220fc8dcfc408a53e20b2973748c4d7831829
 }
  
 /* Submenu
@@ -186,7 +190,11 @@ header {
     color: #000000;
 }
 #menu ul li:hover a {
+<<<<<<< HEAD
 	color: #ffffff;
+=======
+	color: #000;
+>>>>>>> 3e4220fc8dcfc408a53e20b2973748c4d7831829
 }
 .slider_bg {
 	width:100%;
